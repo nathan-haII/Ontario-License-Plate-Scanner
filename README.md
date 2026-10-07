@@ -85,14 +85,4 @@ For each photo where 7 characters are segmented, you type the true plate text an
 - **Inflated validation scores.** Augmented copies of the same crop can land in both train and test folds, so cross-validation accuracy overstates real performance. Test on plates the model has never seen.
 - **Model portability.** `svc.pkl` depends on the scikit-learn version it was trained with. Retrain on each machine rather than sharing the file.
 
-## Ideas for next steps
 
-- Collect 30–100 real Ontario plate photos and harvest crops
-- Split train/test by original crop before augmenting for honest accuracy
-- Swap the SVC for a small CNN and compare
-- Replace the CCA localizer with a trained detector (e.g. YOLO)
-- Support more Ontario plate formats
-
-## Privacy note
-
-License plates are personal information. Only use photos you have the right to use, and avoid publishing images of identifiable plates.
